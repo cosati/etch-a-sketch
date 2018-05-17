@@ -1,17 +1,20 @@
-function createBoxes () {
-  console.log(container);
-  let q = boxPerLine * boxPerColumn;
-  let blocks = [];
-  for (let i = 0; i < q; i++) {
-    blocks.push(document.createElement('div').classList.add('block'));
-  }
-
-  blocks.forEach(function(item) {
-    container.appendChild(item);
-  });
-
-}
-
 const boxPerLine = 16;
 const boxPerColumn = 16;
-const container = document.querySelector('#container');
+
+window.addEventListener('DOMContentLoaded', function () {
+	const container = document.querySelector('#container');
+});
+
+function createBoxes() {
+  let blocks = [];
+  let q = boxPerColumn * boxPerLine;
+  for (let i = 0; i < q; i++) {
+    blocks.push(document.createElement('div'));
+  }
+  console.log(blocks);
+  blocks.forEach(function(item) {
+	item.classList.add('block');
+    container.appendChild(item);
+  });
+}
+
