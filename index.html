@@ -7,8 +7,19 @@
     <title>Etch-a-Sketch</title>
   </head>
   <body>
-    <div id="container">
-
-    </div>
+	<div class="wrapper">
+		<div id="buttons">
+			<div class="colors">
+				<div class="color black" onclick="selectColor('black')"></div>
+				<div class="color red" onclick="selectColor('red')"></div>
+				<div class="color blue" onclick="selectColor('blue')"></div>
+				<div class="color yellow" onclick="selectColor('yellow')"></div>
+				<div class="color orange" onclick="selectColor('orange')"></div>
+				<div class="color white" onclick="selectColor('white')"></div>
+			</div>
+			<div class="reset" onclick="reset()">RESET</div>
+		</div>
+		<div id="container"></div>
+	</div>
   </body>
 </html>
