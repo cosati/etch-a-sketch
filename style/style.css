@@ -1,19 +1,18 @@
 *{
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
 }
 
 .wrapper {
 	width: 1024px;
 	margin: 40px auto;
-	border: 1px solid black;
 	overflow: hidden;
 }
 
 #container {
   width: 800px;
   height: 800px;
-  /*margin: 40px auto;*/
   float: right;
   display: flex;
   border: 3px solid black;
@@ -22,11 +21,8 @@
 }
 
 .block {
-  /*height: 50px;
-  width: 50px;*/
   border: 1px solid black;
   box-sizing: border-box;
-  /*flex: 1 1 50px;*/
 }
 
 .reset {
@@ -34,14 +30,13 @@
 	text-align: center;
 	border: 1px solid black;
 	font-family: sans-serif;
-	padding: 5px 10px;	
+	padding: 5px 10px;
 	float: left;
 	display: block;
 }
 
 #buttons {
 	float: left;
-	/*border: 1px solid black;*/
 	width: 200px;
 	margin-left: 10px;
 	margin-top: 10px;
@@ -87,4 +82,32 @@
 
 .white {
 	background-color: white;
+}
+
+.txt {
+  text-align: center;
+}
+
+input.number {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.plot {
+  margin-bottom: 20px;
+  font-family: sans-serif;
+  text-align: left;
+}
+
+p.alert {
+  color: red;
+  font-size: 10px;
+  margin-top: 5px;
+  display: none;
+}
+
+h1 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: left;
 }

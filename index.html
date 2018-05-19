@@ -9,6 +9,14 @@
   <body>
 	<div class="wrapper">
 		<div id="buttons">
+      <h1>ETCH-A-SKETCH</h1>
+      <div class="plot">
+        <form action="#" onsubmit="plotCanvas(this)">
+          <span class="txt">Size: </span>
+          <input type="number" class="number" value="16"><input type="submit" class="btn" value="OK"/>
+          <p class="alert"></p>
+        </form>
+      </div>
 			<div class="colors">
 				<div class="color black" onclick="selectColor('black')"></div>
 				<div class="color red" onclick="selectColor('red')"></div>
